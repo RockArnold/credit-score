@@ -10,6 +10,10 @@ type Signers = {
   bob: HardhatEthersSigner;
 };
 
+/**
+ * Deploy fixture for testing
+ * Creates an encrypted threshold value and deploys the contract
+ */
 async function deployFixture() {
   const threshold = 50;
   const placeholderAddress = "0x0000000000000000000000000000000000000000";
