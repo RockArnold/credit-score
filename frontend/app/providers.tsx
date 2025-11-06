@@ -10,6 +10,10 @@ type Props = {
   children: ReactNode;
 };
 
+/**
+ * Root providers component
+ * Wraps the app with necessary context providers for MetaMask and storage
+ */
 export function Providers({ children }: Props) {
   return (
     <MetaMaskProvider>
