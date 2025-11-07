@@ -30,6 +30,10 @@ type CreditScoreInfoType = {
   chainName?: string;
 };
 
+/**
+ * Get credit score contract info by chain ID
+ * Returns ABI and contract address for the specified chain
+ */
 function getCreditScoreByChainId(
   chainId: number | undefined
 ): CreditScoreInfoType {
