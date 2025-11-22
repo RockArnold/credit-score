@@ -2,6 +2,10 @@ import { ethers, fhevm } from "hardhat";
 import { DeployFunction } from "hardhat-deploy/types";
 import { HardhatRuntimeEnvironment } from "hardhat/types";
 
+/**
+ * Deploy function for EncryptedCreditScore contract
+ * Handles deployment in both mock and real network environments
+ */
 const func: DeployFunction = async function (hre: HardhatRuntimeEnvironment) {
   const { deployer } = await hre.getNamedAccounts();
   const { deploy } = hre.deployments;
