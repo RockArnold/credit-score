@@ -14,7 +14,6 @@
     "start": "next start",
     "lint": "next lint"
   },
-  "_comment": "FHEVM dependencies updated to latest stable versions",
   "dependencies": {
     "@zama-fhe/relayer-sdk": "^0.3.0-5",
     "class-variance-authority": "^0.7.1",
