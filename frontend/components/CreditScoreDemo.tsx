@@ -6,6 +6,10 @@ import { useInMemoryStorage } from "../hooks/useInMemoryStorage";
 import { useMetaMaskEthersSigner } from "../hooks/metamask/useMetaMaskEthersSigner";
 import { useCreditScore } from "@/hooks/useCreditScore";
 
+/**
+ * Credit Score Demo Component
+ * Main UI component for interacting with encrypted credit score system
+ */
 export const CreditScoreDemo = () => {
   const { storage: fhevmDecryptionSignatureStorage } = useInMemoryStorage();
   const {
