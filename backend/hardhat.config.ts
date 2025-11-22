@@ -12,8 +12,11 @@ import "solidity-coverage";
 // Run 'npx hardhat vars setup' to see the list of variables that need to be set
 
 // Support environment variables set via $env: in PowerShell
+// MNEMONIC: Used for generating deterministic accounts in local networks
 const MNEMONIC: string = process.env.MNEMONIC || vars.get("MNEMONIC", "test test test test test test test test test test test junk");
+// INFURA_API_KEY: API key for Infura RPC endpoint
 const INFURA_API_KEY: string = vars.get("INFURA_API_KEY", "zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz");
+// SEPOLIA_RPC_URL: Custom RPC URL for Sepolia testnet (optional)
 const SEPOLIA_RPC_URL: string = process.env.SEPOLIA_RPC_URL || "";
 
 const config: HardhatUserConfig = {
